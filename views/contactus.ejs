@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<!-- Arash Karimi | 301303157 -->
+<!-- https://github.com/imCaptainG/Assignment1.git -->
+
+<head>
+    <title>Contact Me</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.jpg" alt="Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/contactus">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Me: </h1>
+        <div class="contact-info">
+            <h2>Contact Information:</h2>
+            <p>If you have any questions or would like to discuss a potential project, feel free to reach out to me.</p>
+        </div>
+        <div class="contact-form">
+            <h2>Send me a message:</h2>
+            <form action="/contact" method="POST">
+                <input type="text" name="firstName" placeholder="First Name" required>
+                <input type="text" name="lastName" placeholder="Last Name" required>
+                <input type="tel" name="contactNumber" placeholder="Contact Number" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="message" name="message" placeholder="Message" required>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="scripts/app.js"></script>
+    <%- include('partials/footer') %>
+</body>
+
+</html>
